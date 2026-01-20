@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;500&display=swap');
 body {
   padding-top: 110px;
-  animation: pageFade 1s ease forwards; /* offer-bar + navbar space */
+  animation: pageFade 1s ease forwards; 
 }
 @keyframes pageFade {
   from { opacity: 0; }
@@ -775,7 +775,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   box-shadow: 0 8px 25px rgba(255, 95, 162, 0.45);
 }
 
-/* shine overlay */
 .offer-bar::before {
   content: "";
   position: absolute;
@@ -789,7 +788,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   animation: shine 6s linear infinite;
 }
 
-/* moving text */
 .offer-text {
   white-space: nowrap;
   padding-left: 100%;
@@ -802,7 +800,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   animation-play-state: paused;
 }
 
-/* animations */
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
@@ -832,7 +829,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
     transform: translateY(0);
   }
 }
-/* Container asymmetric */
 .about-container {
   max-width: 1200px;
   margin: auto;
@@ -843,7 +839,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   position: relative;
 }
 
-/* IMAGE */
 .about-img {
   position: relative;
   transform: rotate(-3deg) translateY(-20px);
@@ -860,7 +855,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   box-shadow: 0 40px 90px rgba(255,95,162,0.35);
 }
 
-/* Glow overlay */
 .img-glow {
   position: absolute;
   inset: 0;
@@ -869,7 +863,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   animation: glowMove 6s ease-in-out infinite alternate;
 }
 
-/* SPARKLES */
 .sparkle {
   position: absolute;
   width: 12px;
@@ -891,7 +884,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   50% { transform: translateX(10px) translateY(-8px); }
 }
 
-/* CONTENT */
 .about-content {
   position: relative;
   opacity: 0;
@@ -925,7 +917,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   margin-bottom: 36px;
 }
 
-/* FEATURES CARDS */
 .about-features {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -946,7 +937,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   box-shadow: 0 30px 65px rgba(255,95,162,0.35);
 }
 
-/* ANIMATION */
 @keyframes fadeSlide {
   to {
     opacity: 1;
@@ -954,7 +944,6 @@ animation: heroZoom 18s ease-in-out infinite alternate;
   }
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
   .about-container {
     grid-template-columns: 1fr;
